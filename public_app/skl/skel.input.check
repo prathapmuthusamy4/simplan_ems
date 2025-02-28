@@ -1,0 +1,5 @@
+; input.check
+; カラム名               =     必須,            種別,  最小値,          最大値,     Trimフラグ,     エラー時の名称,
+{foreach from=$colum_list item="cur" name="current"}
+{$cur.name|str_pad:24:" "}= "{$cur.required|str_pad:8:" ":STR_PAD_LEFT},{$cur.type|str_pad:16:" ":STR_PAD_LEFT},{$cur.min|str_pad:8:" ":STR_PAD_LEFT},{$cur.max|str_pad:16:" ":STR_PAD_LEFT},               1,{$cur.label|str_pad:40:" ":STR_PAD_LEFT}";
+{/foreach}

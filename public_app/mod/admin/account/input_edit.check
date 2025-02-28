@@ -1,0 +1,8 @@
+;input.check
+;  カラム名               = "必須,        種別,          最小値,        最大値,        Trimフラグ,      エラー時の名称,"
+f_name                    = "1,         TEXT,           0,             64,           1,              Name,"
+f_mailaddress             = "1,         MAIL,           0,            255,           1,              Mail,"
+f_id                      = "1,    ALPHA_NUM,           6,             20,           1,              ID,"
+f_password                = "0,    ALPHA_NUM,           6,             20,           1,              Password,"
+f_password_conf           = "0,    ALPHA_NUM,           6,             20,           1,              Password Confirm,"
+f_admin_kbn               = "1,       SELECT,           1,              1,           1,              Admin Category,"

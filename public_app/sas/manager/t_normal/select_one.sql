@@ -1,0 +1,22 @@
+SELECT
+     normal.f_normal_id
+    ,normal.f_name
+    ,date_format(normal.f_dob, '%Y/%m/%d') as f_dob
+    ,normal.f_age
+    ,normal.f_gender
+    ,normal.f_blood_group
+    ,normal.f_hobbies
+    ,normal.f_remarks
+    ,normal.f_del_flg
+    ,normal.f_reg_account
+    ,normal.f_reg_time
+    ,normal.f_upd_account
+    ,normal.f_upd_time
+FROM
+    t_normal normal
+WHERE
+    normal.f_del_flg = '{$param.where.f_del_flg|addslashes}'
+{if isset($param.where.f_normal_id) && !is_empty($param.where.f_normal_id)}
+AND
+    normal.f_normal_id = {$param.where.f_normal_id|addslashes}
+{/if}
