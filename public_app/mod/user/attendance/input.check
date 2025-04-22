@@ -1,0 +1,4 @@
+;input.check
+;  カラム名      = "必須,         種別,        最小値,       最大値,      Trimフラグ,      エラー時の名称,"
+f_leave_type    = "0,          CHAR,         0,            1,         1,              Leave Type,"
+f_status        = "1,          CHAR,           0,           1,         1,              Attendance Status,"

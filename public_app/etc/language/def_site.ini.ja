@@ -1,0 +1,168 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; [SITE NAME]_site.ja.ini
+; サイトに関する設定ファイル
+; [note] 言語に依存するものを記載する
+;        サイト単位で作成する
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;
+; 基本設定
+;;;;;;;;;;;;;;;;;;;;
+[BASE]
+    ;; システム名称
+    system_name = "SIMPLAN EMS"
+    ;; システムバージョン
+    system_version = "1.000"
+    ;; 名称
+    name = "株式会社スリート"
+    ;; 名称（英語）
+    name_en = "SIMPLAN"
+    ;; 営業所名等
+    subname = "本社"
+    ;; 郵便番号
+    zip = "542-0081"
+    ;; 住所0?2
+    address0 = "大阪府"
+    address1 = "大阪市中央区南船場4丁目6-10"
+    address2 = "新東和ビルB棟 5階"
+    ;; URL
+    url = "https://roz.threet.co.jp/~m-ela/simplan/"
+    ;; 管理者URL
+    admin_url = "https://roz.threet.co.jp/~m-ela/simplan/admin/"
+    ;; メールアドレス
+    mail = "info@threet.co.jp"
+    ;; 電話番号
+    tel = "06-6251-0315"
+    ;; 電話番号
+    tel2 = ""
+    ;; FAX番号
+    fax = "06-6251-0314"
+    ;; 携帯番号
+    mobile = ""
+    ;; 窓口所属
+    contact_belongto = ""
+    ;; 窓口肩書
+    contact_hat = ""
+    ;; 窓口氏名
+    contact_name = ""
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; メール
+    ;; タイトルヘッダ
+    mail_head_title = ""
+    ;; メール氏名敬称
+    mail_name_prefix = ""
+    ;; 管理者メールアドレス
+    mail_admin_address = "ela@simplan.co.in"
+    ;; 管理者名
+    mail_admin_name = "株式会社スリート"
+    ;; 送信元メールアドレス
+    mail_sender_address = "ela@simplan.co.in"
+    ;; 送信元名
+    mail_sender_name = "株式会社スリート"
+    ;; BCCメールアドレス
+    mail_bcc = ""
+    ;; 着信メールアドレス
+    mail_incoming_address = ""
+    ;; 着信メールアドレス宛て名
+    mail_incoming_name = ""
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; SEO
+    ;; キーワード
+    meta_keyword = ""
+    ;; 説明文
+    meta_description = ""
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; INFORMATION
+    ;; 内容
+    information = ""
+
+;;;;;;;;;;;;;;;;;;;;
+; サイト設定
+;;;;;;;;;;;;;;;;;;;;
+[SITE]
+    ;; ログインURL
+    login_url      = index.php
+    ;; ユーザログインURL
+    user_login_url = login.php
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; 日付
+    ;; 一日の秒数
+    one_day_number     = 86400
+    ;; メール送信タイムラグ
+    mail_time_lag = 10
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; アップロードファイル格納
+    ;;; [note] （注意）
+    ;;;        設置トップからのパス
+    ;; ディレクトリ
+    file_dir = "upload/"
+    ;; ファイルテンポラリディレクトリ
+    file_temp_dir = "upload_temp/"
+    ;;
+    file_prefix = "files"
+    ;; アップロードファイル最大サイズ
+    file_max_size = 52428800
+    ;; 会報誌
+    file_dir_files = "upload/files/"
+
+    ;; ファイルテンポラリディレクトリ
+    img_temp_dir       = "admin/img/img_temp/"
+    ;; ファイルテンポラリディレクトリ
+    img_temp_dir_profile_photo  = "admin/img/img_temp/"
+    ;;; デフォルト値
+    ;; ディレクトリ
+    img_dir_profile_photo = "admin/img/profile_photo/"
+    ;; 接頭語
+    img_prefix = "profile_photo"
+    ;; 幅
+    img_width = 300
+    ;; 高さ
+    img_height =
+    ;; 適正基準
+    img_createmode = "WIDTH"
+    ;; 拡張
+    img_expansion = ""
+    ;; サムネイル幅
+    img_thumb_width = 60
+    ;; サムネイル高さ
+    img_thumb_height = 20
+    ;; サムネイル適正基準
+    img_thumb_createmode = "WIDTH"
+    ;; サムネイル拡張
+    img_thumb_expansion = ""
+    ;; 画像最大サイズ
+    img_max_size = 5242880
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; 消費税
+    ;; 税率
+    tax_rate = 8
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; ページ表示数
+    ;; ADMIN SIDE
+    account_page_record  = 15
+    ;; Addemployee
+    addemployee_page_record  = 10
+    ;; attendance
+    attendance_page_record  = 15
+    ;; salary
+    salary_page_record  = 15
+    ;; User
+    user_page_record  = 15
+
+    ;;;;;;;;;;;;;;;;;;;;
+    ;;; ページ表示数
+    ;; USER SIDE
+
+
+;;
+; Local Variables:
+; tab-width: 4
+; mode: Conf
+; End:

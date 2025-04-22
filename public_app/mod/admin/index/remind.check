@@ -1,0 +1,4 @@
+;input.check
+;  カラム名               = "必須,      種別,           最小値,       最大値,        Trimフラグ,     エラー時の名称,"
+f_id                      = "1,    ALPHA_NUM,           6,             20,           1,              ログインID,"
+f_new_password            = "1,    ALPHA_NUM,           6,             20,           1,              新パスワード,"

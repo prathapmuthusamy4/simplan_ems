@@ -1,0 +1,65 @@
+----------------------------------------------------------------------
+                     SIMPLAN コマンドリファレンス
+----------------------------------------------------------------------
+
+o テーブル オブジェクト・マネージャーの追加
+  テーブルを検索し、オブジェクトを生成し、マネージャーを生成する。
+# simplan add-object [TABLE NAME]
+(例) simplan add-object account
+
+インストール場所
+app/sas/obj/account/
+
+
+  全テーブルのオブジェクトを追加するとき
+# simplan add-object -a
+
+
+
+
+o プロセスファイル一式の追加
+  アクション名を元に「一覧・新規・更新・削除」のプロセスファイルを作成する。
+# simplan add-process [PROCESS NAME] -ini ini_file
+
+# simplan add-list-process [PROCESS NAME]
+# simplan add-new-process [PROCESS NAME]
+# simplan add-update-process [PROCESS NAME]
+# simplan add-del-process [PROCESS NAME]
+
+
+インストール場所
+app/mod/admin/account/process
+                     /view
+
+
+o プログラムファイル一式の追加
+  アクション名を元に「一覧・新規・更新・削除」、テーブルオブジェクトの作成をする。
+# simplan add-app [TABLE NAME] [APP NAME]
+
+(例) o simplan add-app -t account admin/account
+
+インストール場所
+app/mod/admin/account/process
+                     /view
+app/sas/obj/account/
+
+
+
+--- ↓ここからは将来予定のもの ---
+
+o プロジェクト追加
+  プロジェクトを追加する
+# simplan add-project [PROJECT NAME]
+(例) simplan add-project seleb
+
+
+
+o アプリケーションインストール
+  既存のモジュールを追加する
+# simplan add-module [MODULE NAME]
+(例) simplan add-module faqsystem
+
+
+----------------------------------------------------------------------
+                                E N D
+----------------------------------------------------------------------

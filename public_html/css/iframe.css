@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* =======================================
+    Reset CSS
+========================================== */
+
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h4,h4,h5,h6,
+pre,code,form,fieldset,legend,
+p,blockquote,table,th,td {margin: 0; padding: 0;}
+
+html{
+
+}
+
+body { line-height: 1.5; background: #000; color: rgb(0, 0, 0);
+	font-size:12px;
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+}
+
+img {border: 0; vertical-align: top;}
+
+h1,h2,h4,h4,h5,h6 {font-size: 100%; font-weight: normal;}
+
+ul,dl,ol {text-indent: 0;}
+li {list-style: none;}
+
+address,caption,cite,code,dfn,em,th,var {font-style: normal; font-weight: normal;}
+
+input,textarea,select {font-family: inherit; font-size: inherit; font-weight:inherit;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {text-align: left; vertical-align: top;}
+caption {text-align: left;}
+
+pre,code,kbd,samp,tt {font-family: monospace;}
+* html pre,* html code,* html kbd,* html samp,* html tt {font-size: 100%; line-height: 100%;}
+*:first-child+html pre,*:first-child html+code,*:first-child html+kbd,*:first-child+html+samp,*:first-child+html tt {font-size: 108%; line-height: 100%;}
+
+
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix {zoom: 1;}
+*:first-child+html .clearfix {zoom: 1;}
+
+
+#iframeContainer {
+	padding: 15px;
+	background-color: white;
+}
+
+#iframeContainer .photo {
+}
+
+#iframeContainer .photo img {
+}
+
+#iframeContainer .text {
+}
+
+#iframeContainer .text h1 {
+}
+
+#iframeContainer .text h1 span {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#iframeContainer .text ul {
+	padding: 15px 0 20px 10px;
+}
+
+#iframeContainer .text ul li {
+	color: #999;
+	list-style: disc inside;
+}
+
